@@ -1,0 +1,2 @@
+{"timestamp":906025,"category":"tab","name":"interaction","extra":{"tab_count":"1","source":"tab_strip","layout":"horizontal","action":"activate","glean_timestamp":"1789176768968"}}
+{"timestamp":907115,"category":"tab","name":"interaction","extra":{"glean_timestamp":"1789176770058","source":"keyboard","layout":"horizontal","tab_count":"1","action":"close"}}
