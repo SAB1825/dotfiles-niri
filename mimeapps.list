@@ -60,6 +60,7 @@ application/x-yaml=dev.zed.Zed.desktop
 application/xml=dev.zed.Zed.desktop
 text/xml=dev.zed.Zed.desktop
 application/x-shellscript=dev.zed.Zed.desktop
+x-scheme-handler/bruno=bruno.desktop
 
 [Added Associations]
 image/jpeg=imv-dir.desktop

@@ -1,0 +1,10 @@
+{
+	"collections": [
+		{
+			"path": "/home/sabari/Documents/bruno/NESTJS_AUTH",
+			"securityConfig": {
+				"jsSandboxMode": "safe"
+			}
+		}
+	]
+}

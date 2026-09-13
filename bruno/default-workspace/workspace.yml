@@ -1,0 +1,12 @@
+opencollection: 1.0.0
+info:
+  name: "My Workspace"
+  type: workspace
+
+collections:
+  - name: "NESTJS_AUTH"
+    path: "/home/sabari/Documents/bruno/NESTJS_AUTH"
+
+specs:
+
+docs: ''

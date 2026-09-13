@@ -1,0 +1,3 @@
+2026/09/13-12:28:33.702 dca Reusing MANIFEST /home/sabari/.config/bruno/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2026/09/13-12:28:33.703 dca Recovering log #3
+2026/09/13-12:28:33.709 dca Reusing old log /home/sabari/.config/bruno/IndexedDB/file__0.indexeddb.leveldb/000003.log 

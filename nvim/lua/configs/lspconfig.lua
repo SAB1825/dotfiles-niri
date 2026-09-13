@@ -5,7 +5,7 @@ local servers = {
   "cssls",
   "ts_ls",                          -- TypeScript / JavaScript
   "eslint",                         -- lint diagnostics + code actions
-  "jsonls",                         -- package.json, tsconfig.json, etc.
+  "jsonlinst",                         -- package.json, tsconfig.json, etc.
   "yamlls",                         -- YAML (docker-compose, CI configs, k8s)
   "dockerls",                       -- Dockerfile
   "docker_compose_language_service" -- docker-compose.yml
@@ -35,7 +35,8 @@ vim.lsp.config("yamlls", {
   settings = {
     yaml = {
       schemaStore = { enable = true, url = "https://www.schemastore.org/api/json/catalog.json" },
-      schemas = {
+      schemas =
+      {
         ["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] = "docker-compose*.yml",
       },
     },
