@@ -1,3 +1,7 @@
-chromium/
-mozilla/firefox/
 bruno/
+mozilla/
+chromium/
+firefox/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

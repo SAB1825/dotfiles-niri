@@ -1,7 +1,0 @@
-[2026-09-12 19:56:01.472] [info]  AutoUpdater configured for linux x64 (using latest.yml)
-[2026-09-12 19:56:01.475] [info]  Checking for update
-[2026-09-12 19:56:01.709] [info]  Generated new staging user ID: bd91b13f-bc72-5bca-bf21-d359b7eb9d11
-[2026-09-12 19:56:04.115] [info]  Update for version 4.1.0 is not available (latest version: 4.1.0, downgrade is disallowed).
-[2026-09-13 12:28:32.196] [info]  AutoUpdater configured for linux x64 (using latest.yml)
-[2026-09-13 12:28:32.200] [info]  Checking for update
-[2026-09-13 12:30:48.770] [info]  Update for version 4.1.0 is not available (latest version: 4.1.0, downgrade is disallowed).
