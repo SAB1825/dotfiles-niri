@@ -1,8 +1,68 @@
-bruno/
+# ============================================
+# Runtime / generated application data
+# ============================================
+
+# Desktop / application state
+dconf/
+session/
+
+# Browser profiles / caches
 mozilla/
 chromium/
-go/
 firefox/
+
+# Browser databases
 *.sqlite
 *.sqlite-wal
 *.sqlite-shm
+
+# ============================================
+# Go generated/user telemetry data
+# ============================================
+
+go/
+**/go/telemetry/
+
+# ============================================
+# Application caches
+# ============================================
+
+.cache/
+.cache/**
+cache/
+cache/**
+
+# ============================================
+# Temporary / backup files
+# ============================================
+
+*.tmp
+*.temp
+*.log
+*.bak
+*~
+*.swp
+*.swo
+
+# ============================================
+# Editor / IDE
+# ============================================
+
+.idea/
+.vscode/
+*.code-workspace
+
+# ============================================
+# Secrets / local environment
+# ============================================
+
+.env
+.env.*
+!.env.example
+
+# ============================================
+# OS generated files
+# ============================================
+
+.DS_Store
+Thumbs.db
