@@ -1,6 +1,7 @@
 bruno/
 mozilla/
 chromium/
+go/
 firefox/
 *.sqlite
 *.sqlite-wal
