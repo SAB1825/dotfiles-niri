@@ -6,12 +6,46 @@ require("rose-pine").setup({
 		italic = false,
 		transparency = true,
 	},
-	highlight_groups = {
-		LspInlayHint = { bg = "base", fg = "muted", italic = true },
-		NotificationInfo = { bg = "none", fg = "text" },
-		NotificationWarning = { bg = "none", fg = "subtle" },
-		NotificationError = { bg = "none", fg = "love" },
+})
+
+require("kanagawa").setup({
+	transparent = true,
+	theme = "wave",
+	overrides = function()
+		local none = "none"
+		return {
+			LspInlayHint = { fg = "#727169", italic = true },
+			Normal = { bg = none },
+			NormalNC = { bg = none },
+			NormalFloat = { bg = none },
+			SignColumn = { bg = none },
+			CursorLine = { bg = none },
+			CursorLineNr = { bg = none, fg = "#c8c093" },
+			LineNr = { bg = none },
+			FoldColumn = { bg = none },
+			StatusLine = { bg = none },
+			StatusLineNC = { bg = none },
+			TabLine = { bg = none },
+			TabLineSel = { bg = none },
+			TabLineFill = { bg = none },
+			WinSeparator = { bg = none },
+			Pmenu = { bg = none },
+			PmenuSel = { bg = none },
+			PmenuSbar = { bg = none },
+			PmenuThumb = { bg = none },
+			SpellBad = { bg = none },
+			SpellCap = { bg = none },
+			MatchParen = { bg = "#363646" },
+		}
+	end,
+})
+
+require("nightfox").setup({
+	options = {
+		transparent = true,
 	},
 })
 
-vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme carbonfox")
+
+vim.api.nvim_set_hl(0, "LspInlayHint", { fg = "#b6b6be", italic = true })

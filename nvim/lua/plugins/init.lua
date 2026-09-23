@@ -1,5 +1,10 @@
 vim.pack.add({
+	-- Auto save
+	"https://github.com/okuuva/auto-save.nvim",
+
 	-- File navigation
+	"https://github.com/nvim-tree/nvim-web-devicons",
+	"https://github.com/nvim-tree/nvim-tree.lua",
 	"https://github.com/stevearc/oil.nvim",
 	"https://github.com/refractalize/oil-git-status.nvim",
 	"https://github.com/nvim-telescope/telescope.nvim",
@@ -8,6 +13,8 @@ vim.pack.add({
 	"https://github.com/nvim-telescope/telescope-frecency.nvim",
 
 	-- Appearance
+	"https://github.com/EdenEast/nightfox.nvim",
+	"https://github.com/rebelot/kanagawa.nvim",
 	"https://github.com/rose-pine/neovim",
 	"https://github.com/kevinhwang91/nvim-hlslens",
 	"https://github.com/m4xshen/smartcolumn.nvim",
@@ -62,6 +69,7 @@ vim.pack.add({
 	"https://github.com/alker0/chezmoi.vim",
 })
 
+require("plugins.auto-save")
 require("plugins.blink")
 require("plugins.colorscheme")
 require("plugins.diagnostics")
@@ -70,6 +78,7 @@ require("plugins.git")
 require("plugins.lsp")
 require("plugins.lualine")
 require("plugins.mini")
+require("plugins.nvim-tree")
 require("plugins.oil")
 require("plugins.telescope")
 require("plugins.treesitter")

@@ -3,6 +3,24 @@ lualine.setup({
 	options = {
 		component_separators = "",
 	},
+	tabline = {
+		lualine_a = {
+			{
+				"buffers",
+				show_filename_only = true,
+				hide_filename_extension = false,
+				show_modified_status = true,
+				sort = "activity",
+				max_length = vim.o.columns * 2 / 3,
+				symbols = {
+					modified = " ●",
+					alternate_file = "",
+					directory_separator = "/",
+				},
+			},
+		},
+		lualine_z = { "tabs" },
+	},
 	sections = {
 		lualine_a = { "mode" },
 		lualine_c = { { "filename", path = 4 } },

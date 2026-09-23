@@ -4,6 +4,10 @@ vim.keymap.set({ "n", "v" }, "<leader>", "<nop>", { desc = "Disable leader key d
 -- Redo remap
 vim.keymap.set("n", "U", "<C-r>", { desc = "Redo" })
 
+vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", {
+	desc = "Toggle file explorer",
+})
+
 -- Swap between split buffers
 vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", {
 	silent = true,
@@ -34,6 +38,16 @@ vim.keymap.set("n", "<S-h>", ":bprevious<CR>", { silent = true, desc = "Previous
 
 -- Close currently active buffer
 vim.keymap.set("n", "<C-c>", ":bwipeout<CR>", { silent = true, desc = "Close current buffer" })
+
+-- Close all buffers except the current one
+vim.keymap.set("n", "<leader>ba", function()
+	local cur = vim.api.nvim_get_current_buf()
+	for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+		if buf ~= cur and vim.api.nvim_buf_is_valid(buf) and vim.bo[buf].buflisted then
+			vim.cmd.bdelete(buf)
+		end
+	end
+end, { silent = true, desc = "Close all other buffers" })
 
 -- Center buffer when navigating up and down
 vim.keymap.set("n", "<S-k>", "<C-u>zz", { desc = "Scroll up and center" })
